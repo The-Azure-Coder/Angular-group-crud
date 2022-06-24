@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 2rem;
+    row-gap: 3rem;
 }
 mat-card{
     height: 400px;
