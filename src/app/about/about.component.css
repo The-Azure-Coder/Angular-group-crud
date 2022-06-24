@@ -1,4 +1,108 @@
-img {
-    height: 200px;
-    width: 200px;
+
+body {
+    background-color: rgba(194, 227, 242, 0.689);
 }
+
+.aboutpic {
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+.aboutdiv {
+    padding:0px;
+}
+
+.about {
+ position:absolute;
+
+margin-top: -15%;
+margin-left: 35%;
+font-family: cursive;
+color: rgba(238,239,214,255);
+background-color:#8d050c63 ;
+border-radius: 30%;
+font-size: 70px;
+
+}
+
+
+
+
+.lorempic {
+    float:right;
+    text-align: center;
+    position: relative;
+    margin-top: 0%;
+    height:200px;
+    width: 200px;
+    border: solid white 1px;
+    
+}
+.loremdiv1 p, .loremdiv2 p{
+    word-wrap: break-word;
+    margin-top: 0%;
+    background: #F8FFE8;
+    background: linear-gradient(to right, #F8FFE8 0%, #18855e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+}
+
+p{
+    text-align: justify;
+    width:90%;
+   
+
+    
+}
+.title {
+    text-align: center;
+    background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: 'Times New Roman', Times, serif;
+
+   
+}
+
+.loremdiv1 {
+    padding :20px;
+    display:flex;
+    gap:40px;
+    background: rgb(19,19,124);
+background: radial-gradient(circle, rgba(19,19,124,0.6982143199076505) 18%, rgba(2,0,36,1) 53%, rgba(0,212,255,1) 88%);
+}
+
+.loremdiv2 {
+    padding :20px;
+    display:flex;
+    gap:20px;
+    background: rgb(231,231,231);
+background: linear-gradient(90deg, rgba(231,231,231,1) 9%, rgba(253,29,29,0.6365896700477065) 51%, rgba(252,176,69,1) 100%);
+    
+}
+
+.otherdiv {
+    display: flex;
+    gap:20px;
+    background-color: rgba(194, 227, 242, 0.689);
+}
+
+.otherdiv p{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+
+input {
+    border: 2px green solid;
+    height: 18px;
+}
+
+span {
+    font-size: 20px;
+}
+
+ 
