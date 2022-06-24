@@ -16,6 +16,11 @@ import { FormsModule } from '@angular/forms';
 import { PostComponent } from './post/post.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { ProducteditComponent } from './productedit/productedit.component';
+import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -38,7 +43,12 @@ import { ProducteditComponent } from './productedit/productedit.component';
     MatCardModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    FormsModule
+    FormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule
    
   ],
   providers: [],

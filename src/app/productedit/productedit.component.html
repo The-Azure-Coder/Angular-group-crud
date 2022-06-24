@@ -1,33 +1,45 @@
-<h1> Edit</h1>
+<br><br><br><br><br><br><br>
+<h1>YOU ARE EDITING THE FOLLOWING PRODUCT</h1>
+<br><br>
+
+    <form action="" method="post" (submit)="updateproduct()" #form>
+        <fieldset>
+            <br>
+            <h2> 
+              <b>Product ID:</b> 
+              {{products.id}}
+              <br>
+              
+              <b>Product Name:</b> 
+              {{products.name}}  
+            </h2>
+            <br>
+
+            <label for="price">Price</label><br>
+            <input type="number" name="price" value="{{products.price}}"><br><br>
+
+            <label for="quantity">Quantity</label><br>
+            <input type="number" name="quantity" value="{{products.quantity}}"><br><br>
+
+            <button mat-raised-button color="accent">Make the Changes</button><br><br>
+        </fieldset>
+    </form>
 
 
-
-
-
-
-
-
-<form action="" method="post" (submit)="updateproduct()"  #form>
+<!--<form action="" method="post" (submit)="updateproduct()"  #form>
     
   <h1> 
-    
     {{products.id}}  <br>
     
-    {{products.name}}
-   
-    
+    {{products.name}}  
   </h1>
 
     <label for="price">Price </label>
     <input type="number" name="price" value="{{products.price}}" >
 
-
-
     <label for="quantity">Quantity"  </label>
     <input type="number" name="quantity" value="{{products.quantity}}">
 
-
     <button  mat-button  > Add Product to Database</button>
 
-
-    </form>
+</form>-->
