@@ -22,6 +22,12 @@ export class DataService {
   }
 
   public getLimitedProducts(page?:number, limit?:number):Observable<ProductInterface[]>{
+    if(!page){
+      page = 1;
+    }
+    if(!limit){
+      limit = 20;
+    }
     return this.httpClient.get<ProductInterface[]>(this.REST_API_SERVER+"?_page="+page +"&_limit="+limit);
   }
 
