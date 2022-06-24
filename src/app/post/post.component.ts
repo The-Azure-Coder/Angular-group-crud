@@ -28,7 +28,7 @@ export class PostComponent implements OnInit {
 
     let formdata = this.creationForm.nativeElement as HTMLFormElement;
     let data = {
-      id: parseInt((formdata.querySelector("input[name='id']") as HTMLInputElement).value),
+      id: 0,
       name: (formdata.querySelector("input[name='name']") as HTMLInputElement).value,
       description: (formdata.querySelector("input[name='description']") as HTMLInputElement).value,
       price: parseFloat((formdata.querySelector("input[name='price']") as HTMLInputElement).value),
