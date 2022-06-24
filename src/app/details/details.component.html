@@ -1,0 +1,26 @@
+<div >
+    
+    <div style="padding: 13px;" class="flexbox" >
+        <mat-spinner *ngIf="products.length === 0"></mat-spinner>
+        <mat-card  style="margin-top:12px;" class="containers">
+            <mat-card-header>
+                <mat-card-title>{{products.name}}</mat-card-title>
+                <mat-card-subtitle>$/{{products.price}} {{products.quantity}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content class="desc" >
+                
+                <p>{{products.description}}</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" class="quant" value="1" [(ngModel)]="quantity" required>
+            </mat-card-content>
+            <mat-card-content>
+                <img  src="{{ products.imageUrl }}" />
+               
+            
+            </mat-card-content>
+            <mat-card-actions class="button"  ><button    mat-button> Submit Purchase</button></mat-card-actions>
+
+           
+        </mat-card>
+    </div>
+</div>

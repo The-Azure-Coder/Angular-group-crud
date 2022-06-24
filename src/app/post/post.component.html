@@ -1,0 +1,27 @@
+<form action="" method="post" (submit)="createproduct()" #addProductForm>
+    
+
+    <label for="id">Product Id  </label>
+    <input type="number" name="id">
+
+    <label for="name">Product Name </label>
+    <input type="text" name="name" >
+
+    <label for="description">Product Description</label>
+    <input type="text" name="description">
+
+    <label for="price">Price </label>
+    <input type="number" name="price" >
+
+    <label hidden for="imageUrl">Product Image</label>
+    <input type="hidden"   name="imageUrl" value="https://source.unsplash.com/1600x900/?food">
+
+    <label for="quantity">Quantity"  </label>
+    <input type="number" name="quantity">
+
+
+    <button    mat-button > Add Product to Database</button>
+
+
+
+</form>

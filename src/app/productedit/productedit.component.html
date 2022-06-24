@@ -1,0 +1,33 @@
+<h1> Edit</h1>
+
+
+
+
+
+
+
+
+<form action="" method="post" (submit)="updateproduct()"  #form>
+    
+  <h1> 
+    
+    {{products.id}}  <br>
+    
+    {{products.name}}
+   
+    
+  </h1>
+
+    <label for="price">Price </label>
+    <input type="number" name="price" value="{{products.price}}" >
+
+
+
+    <label for="quantity">Quantity"  </label>
+    <input type="number" name="quantity" value="{{products.quantity}}">
+
+
+    <button  mat-button  > Add Product to Database</button>
+
+
+    </form>
