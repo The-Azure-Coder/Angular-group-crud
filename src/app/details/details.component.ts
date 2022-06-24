@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
+import { DataService, ProductInterface } from '../data.service';
 import { ActivatedRoute } from '@angular/router';
 import { ViewChild } from '@angular/core';
 import { ElementRef } from '@angular/core';
@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-  products:any = [];
+  product !: ProductInterface;
  
   quantity:any = 0;
    
@@ -35,11 +35,8 @@ getItem(){
   
    
 
-  this.dataservice.fetchItem(id).subscribe((data:any[]) => {
-    this.products = data;
-    
-
-    
+  this.dataservice.fetchItem(id).subscribe((data:ProductInterface) => {
+    this.product = data;
     
 });
 }
