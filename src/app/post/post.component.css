@@ -30,7 +30,7 @@ input {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: dotted;
-    background-color: #eee;
+    background-color: #fcbf49;
 }
 input[type=number] {
     width: 20%;
@@ -40,7 +40,7 @@ input[type=number] {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: dotted;
-    background-color: #eee;
+    background-color: #fcbf49;
 }
 h2 {
     text-align: center;

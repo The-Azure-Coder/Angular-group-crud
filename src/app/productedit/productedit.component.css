@@ -32,7 +32,7 @@ input {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: dotted;
-    background-color: #eee;
+    background-color: #48cae4;
 }
 input[type=number] {
     width: 20%;
@@ -42,7 +42,7 @@ input[type=number] {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: dotted;
-    background-color: #eee;
+    background-color: #48cae4;
 }
 h1 {
     text-align: center;
