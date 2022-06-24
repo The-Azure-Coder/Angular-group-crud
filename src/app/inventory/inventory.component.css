@@ -27,3 +27,39 @@ img {
 .desc {
     height: 180px;
 }
+
+
+.container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    height: 10rem
+}
+
+.mat-form-field {
+    font-size: 2px;
+    width: 100%;
+}
+
+td,
+th {
+    width: 30%;
+    padding-right: 40rem;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.table-head{
+ text-align: center;
+ color: rgb(16, 87, 252); ;
+ font-size: 25px;
+}
+
+.edit-btn{
+    background-color: rgb(16, 87, 252);
+    color: white;
+}
