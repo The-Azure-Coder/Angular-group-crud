@@ -3,3 +3,16 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/* Had to use the styles.css to find the component to style it; */
+.mat-card-header .mat-card-header-text{
+    margin:0;
+}
+
+.loader{
+    height: 100%;
+    width: 100%;
+    display:grid;
+    place-items: center;
+}
