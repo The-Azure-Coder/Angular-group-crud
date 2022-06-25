@@ -35,3 +35,7 @@ After you make the necessary changes to the project, run the command `git add .`
 ### Publishing the change for review.
 
 Before you propose a change, run the command `git pull` to check for change again. After you have confirmed that you have the most latest version, run the command `git push origin --set-upstream <your branch name>` to push the branch with the changes to the project repository.
+
+### Seeing all changes in your branch.
+
+You can view all the code from the other branches in the repository, on your machine by running the code `git fetch` in your terminal. This will check the repository for changes that are not in your branch. If any is found, it will ask if you wish to pull in those changes to your branch. This can be done by running the command `git pull`.
