@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   // Paginator Event
   pageEvent !: PageEvent;
-  pageSizeOptions = [8, 16, 15, 40, 100];
+  pageSizeOptions = [8, 16, 40, 100];
   pageSize = 20;
   length = 100;
   ngOnInit() {
