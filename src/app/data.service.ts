@@ -21,7 +21,7 @@ export class DataService {
     return this.httpClient.patch<ProductInterface>(this.REST_API_SERVER+"/"+id, data);
   }
 
-  public getLimitedProducts(page?:number, limit?:number):Observable<ProductInterface[]>{
+  public getLimitedProducts(page= 1, limit = 20):Observable<ProductInterface[]>{
     if(!page){
       page = 1;
     }
