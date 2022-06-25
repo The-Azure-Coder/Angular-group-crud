@@ -41,3 +41,8 @@ p{
 button{
     border-radius: 1rem;
 }
+@media (max-width: 720px){
+    .detail-grid{
+        grid-template-columns: 1fr;
+    }
+}
