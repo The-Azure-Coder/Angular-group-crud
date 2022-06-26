@@ -1,0 +1,37 @@
+<div class="loader" *ngIf="!menus; else menuInfo">
+    <mat-spinner></mat-spinner>
+</div>
+<ng-template #menuInfo>
+    <section class="menus">
+        <div class="container-1240">
+            <div class="menu-grid">
+                <div class="menu">
+                    <h1>Menu Card</h1>
+                    <ul class="menu__items">
+                        <li class="menu__item" *ngFor="let menu of menus">
+                            <a href="menus/{{menu.id}}" class="menu__link"><span>{{menu.menu_name }}</span><span>${{menu.cost}}</span></a>
+                        </li>
+                    </ul>
+    
+    
+                </div>
+                <div class="advertisement">
+                    <div class="top">
+                        <img src="/assets/logo (2).png" alt=" Image of site logo">
+                    </div>
+                    <div class="middle">Most Popular</div>
+                    <div class="bottom">
+                        <div class="randomItem">
+                            <img src="{{randomItem.imageUrl}}" alt="Image of {{randomItem.menu_name}}">
+                            <p>{{randomItem.menu_name}}</p>
+                            
+                        </div>
+                        <p class="jumbo">Order Now !!!</p>
+                        <p class="jumbo">Call: 1-(876)-768-7849</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</ng-template>

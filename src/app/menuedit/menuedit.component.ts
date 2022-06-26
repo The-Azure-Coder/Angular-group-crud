@@ -1,7 +1,7 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { MenuService } from '../menu.service';
-import { MenuInterface } from '../menu.service';
+import { IMenu } from 'menu';
 
 
 
@@ -11,7 +11,7 @@ import { MenuInterface } from '../menu.service';
   styleUrls: ['./menuedit.component.css']
 })
 export class MenueditComponent implements OnInit {
-   menu!: MenuInterface;
+   menu!: IMenu;
    id = 0;
    @ViewChild('menuUpdate') editform!: ElementRef;
 
@@ -27,9 +27,9 @@ export class MenueditComponent implements OnInit {
 
   getMenu(){
 
-    this.id = this.activatedroute.snapshot.params['id'];
+    this.id = parseInt(this.activatedroute.snapshot.params['id']);
 
-    this.menuservice.fetchItem(this.id).subscribe((data: MenuInterface)=>{
+    this.menuservice.getMenuItemById(this.id).subscribe((data: IMenu)=>{
       this.menu = data;
     })
   }

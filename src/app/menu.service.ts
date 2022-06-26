@@ -1,56 +1,42 @@
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { IMenu } from 'menu';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
-  private REST_API_SERVER = 'http://localhost:3000/menus'
 
-  constructor(private httpClient: HttpClient) { }
-  public sendGetRequest():Observable<MenuInterface[]>{
-    return this.httpClient.get<MenuInterface[]>(this.REST_API_SERVER);
+  private menuApiEndpoint = 'http://localhost:3000/menus'
+  constructor(private http: HttpClient) { }
+
+  getAllMenuItems(): Observable<IMenu[]>{
+    return this.http.get<IMenu[]>(this.menuApiEndpoint);
   }
 
-  public addMenu(data: any):Observable<MenuInterface[]>{
-    return this.httpClient.post<MenuInterface[]>(this.REST_API_SERVER,data);
+  getMenuItemById(id:number):Observable<IMenu>{
+    return this.http.get<IMenu>(this.menuApiEndpoint+"/"+id);
+  }
+  public addMenu(data: any):Observable<IMenu[]>{
+    return this.http.post<IMenu[]>(this.menuApiEndpoint,data);
   }
 
-  public updateMenu(data: any,id:number):Observable<MenuInterface[]>{
-    return this.httpClient.patch<MenuInterface[]>(this.REST_API_SERVER+"/"+id,data)
+  public updateMenu(data: any,id:number):Observable<IMenu[]>{
+    return this.http.patch<IMenu[]>(this.menuApiEndpoint+"/"+id,data)
   }
 
-  public getLimitedMenus(page = 1,limit = 20):Observable<MenuInterface[]>{
-    if(!page){
-      page = 1;
-    }
-    if(!limit){
-      limit = 20;
-    }
-    return this.httpClient.get<MenuInterface[]>(this.REST_API_SERVER+"?_page" +page +"?_limit"+limit)
+  public getLimitedMenus(page = 1,limit = 20):Observable<IMenu[]>{
+
+    return this.http.get<IMenu[]>(this.menuApiEndpoint+"?_page" +page +"?_limit"+limit)
   }
 
-  public deleteMenu(id:number):Observable<MenuInterface[]>{
-  return this.httpClient.delete<MenuInterface[]>(this.REST_API_SERVER+"/"+id) //DELETE A MENU
+  public deleteMenu(id:number):Observable<IMenu[]>{
+  return this.http.delete<IMenu[]>(this.menuApiEndpoint+"/"+id) //DELETE A MENU
   }
 
-
-   //This Scans the ID for the product
-
-  //FOR WHERE YOU SEE 
-
-  public fetchItem(id: Number):Observable<MenuInterface>{
-    return this.httpClient.get<MenuInterface>(`${this.REST_API_SERVER}/${id}`);
-  }
 }
 
 
-export interface MenuInterface{
-  id:number,
-  menu_name:string,
-  menu_description:string,
-  menu_size:number,
-  cost:Number,
-  imageUrl:string
-}
+
+

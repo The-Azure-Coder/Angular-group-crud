@@ -1,18 +1,18 @@
-
-<div class="loader" *ngIf="!product; else details">
+<div class="loader" *ngIf="!menu; else menuDetails">
     <mat-spinner></mat-spinner>
 </div>
-<ng-template #details>
+<ng-template #menuDetails>
     <section class="details">
         <div class="container-1240">
             <div class="detail-grid">
                 <div class="detail-img">
-                    <img src={{product.imageUrl}} alt="image of {{product.name}}">
+                    <img src={{menu.imageUrl}} alt="image of {{menu.menu_name}}">
                 </div>
                 <div class="detail-info">
-                    <p class="name">{{product.name}}</p>
-                    <p class="price">$ {{product.price}}</p>
-                    <p class="desc">{{product.description}}</p>
+                    <p class="name">{{menu.menu_name}}</p>
+                    <p class="name">{{menu.menu_size}}</p>
+                    <p class="price">$ {{menu.cost}}</p>
+                    <p class="desc">{{menu.menu_description}}</p>
                     <div class="cta">
                         <button mat-raised-button color="primary">Add to Cart</button>
                     </div>
