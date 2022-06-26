@@ -1,0 +1,10 @@
+mat-toolbar{
+    padding-top: 15px;
+    display: flex;
+    height: 6.5rem;
+}
+
+.logo{
+   
+    margin-right: 46rem;
+}

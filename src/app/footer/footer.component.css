@@ -1,0 +1,61 @@
+footer{
+  
+
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    background-color: #3f51b5;
+    padding: 30px;
+
+}
+
+.message{
+    text-align: center;
+}
+
+.message h1{
+    color: white;
+    font-size: 30px;
+
+
+}
+.message p{
+    color: white;
+    font-size: 12px;
+}
+
+.message input{
+    width: 18rem;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+.message button{
+    padding: 15px;
+    background-color: rgb(5, 255, 5);
+    color: white;
+    border: none;
+}
+
+.social{
+    padding: 30px;
+    background-color: #2f3c8b;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.social a{
+    text-decoration: none;
+    padding: 8px;
+    margin-right: 2rem;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(30, 30, 247);
+
+}

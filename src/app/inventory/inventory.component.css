@@ -32,7 +32,8 @@ img {
 .container {
     max-width: 1200px;
 
-    margin: 0 auto;
+    margin: 0 auto 4rem;
+    
 }
 
 table {
@@ -60,6 +61,43 @@ th {
 }
 
 .edit-btn{
-    background-color: rgb(16, 87, 252);
+    background-color: #2f3c8b;
     color: white;
 }
+
+.add-btn{
+    background-color: #2f3c8b;
+    float: right;
+    color: white;
+}
+
+.heading{
+    margin-top: 4rem;
+   
+    display: flex;
+    justify-content: center;
+  }
+
+  .heading h1{
+    font-weight: 400;
+
+  }
+
+
+  .half-underline {
+    font-weight: 300;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+  }
+  .half-underline:before{
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 1px;
+      bottom: 0;
+      /*top:-1px;*/
+      left: 0%;
+      border-bottom: 1px solid #fecf8b ;
+  }
+  
