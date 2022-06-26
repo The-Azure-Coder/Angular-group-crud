@@ -1,0 +1,78 @@
+.menu-grid{
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    background-color: #C9A591;
+    /* background-image:url("/assets/ivan-bandura-bav73b2bp9o-unsplash.jpg"); */
+
+}
+.menu-grid > div{
+    flex: 1;
+}
+.menu{
+    padding: 1rem;
+    /* padding-top:0; */
+}
+.menu h1{
+    margin-top: 0;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+}
+.advertisement{
+    display: flex;
+    flex-direction: column;
+}
+
+.advertisement img{
+    width: 100%;
+}
+.menu__items{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+.menu__link{
+    color: #444;
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 300ms ease;
+}
+.menu__link:hover{
+    color: maroon;
+}
+.middle{
+    font-weight: 200;
+    background-color:maroon;
+    font-size: 2rem;
+    text-align:center;
+    padding: 1rem;
+    color: white;
+}
+.top{
+    height: 400px;
+    background-color: var(--primary);
+    display:grid;
+    place-items:center;
+}
+.top img{
+    height: 200px;
+    width: auto;
+}
+.randomItem p{
+    font-size: 1.5rem;
+    text-align:center;
+    font-weight: 500;
+
+
+}
+.bottom .jumbo{
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
