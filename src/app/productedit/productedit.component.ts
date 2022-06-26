@@ -46,7 +46,6 @@ export class ProducteditComponent implements OnInit {
 
   }
     updateproduct(){
-
       let formdata = this.editForm.nativeElement as HTMLFormElement;
       let data = {
         price: parseFloat((formdata.querySelector("input[name='price']") as HTMLInputElement).value),
@@ -54,8 +53,6 @@ export class ProducteditComponent implements OnInit {
 
       };
       this.dataservice.updateproduct(data,this.id).subscribe((response) => {
-        
-          
         console.log(response)
         alert("Changes made successfully")
         this.router.navigateByUrl("/inventory");
@@ -64,4 +61,4 @@ export class ProducteditComponent implements OnInit {
 
     }
 
-  }
+}

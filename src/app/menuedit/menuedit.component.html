@@ -1,0 +1,21 @@
+ <h1>Edit Menu Here</h1>
+<form action="" method="post" (submit)="updateMenu()" #menuUpdate>
+    
+        <b>Menu ID:</b> 
+        {{menu.id}}
+        <br>
+        <b>Menu Name</b>
+        {{menu.menu_name}}
+    
+    <mat-form-field appearance="outline">
+        <mat-label>Enter New Cost</mat-label>
+        <input matInput placeholder="54.00" name="cost">
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+      <br><br>
+      <mat-form-field appearance="outline">
+        <mat-label>Enter New Size</mat-label>
+        <input matInput placeholder="2" name="size">
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+</form>

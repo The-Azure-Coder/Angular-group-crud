@@ -23,6 +23,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MenueditComponent } from './menuedit/menuedit.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     InventoryComponent,
     ProducteditComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    MenueditComponent
     
   ],
   imports: [
