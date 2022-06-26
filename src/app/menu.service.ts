@@ -13,6 +13,10 @@ export class MenuService {
   getAllMenuItems(): Observable<IMenu[]>{
     return this.http.get<IMenu[]>(this.menuApiEndpoint);
   }
+
+  getMenuItemById(id:number):Observable<IMenu>{
+    return this.http.get<IMenu>(this.menuApiEndpoint+"/"+id);
+  }
 }
 
 
