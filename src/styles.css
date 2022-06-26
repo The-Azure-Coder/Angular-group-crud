@@ -16,3 +16,33 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     display:grid;
     place-items: center;
 }
+
+.container-1240{
+    max-width: 1240px;
+    margin:auto;
+    padding: 1rem;
+
+
+}
+@media (max-width: 1280px) {
+    .card-grid {
+        margin-top: 4rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .card-grid {
+        grid-template-columns: auto auto;
+        gap: 2rem;
+    }
+}
+@media (max-width: 580px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
