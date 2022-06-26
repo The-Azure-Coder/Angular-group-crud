@@ -3,7 +3,9 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+:root{
+    --primary: #3F51B5;
+}
 
 /* Had to use the styles.css to find the component to style it; */
 .mat-card-header .mat-card-header-text{
