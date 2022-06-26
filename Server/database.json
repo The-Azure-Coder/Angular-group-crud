@@ -407,8 +407,9 @@
       "menu_name": "Unbranded Granite Computer",
       "menu_description": "Excepturi in ad qui corporis officia ut. Et vitae temporibus est dolores exercitationem.",
       "menu_size": 1,
-      "cost": "36.00",
-      "imageUrl": "https://source.unsplash.com/1600x900/?food=612"
+      "cost": 345,
+      "imageUrl": "https://source.unsplash.com/1600x900/?food=612",
+      "size": 9
     },
     {
       "id": 10001,
@@ -647,8 +648,9 @@
       "menu_name": "Fantastic Fresh Mouse",
       "menu_description": "Enim et ducimus dolor sed rem. Qui laboriosam qui perspiciatis dolor et et omnis officia sit.",
       "menu_size": 0,
-      "cost": "587.00",
-      "imageUrl": "https://source.unsplash.com/1600x900/?food=768"
+      "cost": 7766.8,
+      "imageUrl": "https://source.unsplash.com/1600x900/?food=768",
+      "size": 7
     },
     {
       "id": 10031,

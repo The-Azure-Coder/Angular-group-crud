@@ -1,21 +1,27 @@
- <h1>Edit Menu Here</h1>
-<form action="" method="post" (submit)="updateMenu()" #menuUpdate>
-    
-        <b>Menu ID:</b> 
-        {{menu.id}}
-        <br>
-        <b>Menu Name</b>
-        {{menu.menu_name}}
-    
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+
+<div class="formContainer">
+  <h1>Edit Menu Here</h1>
+  <br /><br />
+  <form action="" method="post" (submit)="updateMenu()" #menuUpdate>
+    <b>Menu ID:</b>
+    {{ menu.id }}
+    <br /><br />
+    <b>Menu Name:</b>
+    {{ menu.menu_name }}
+    <br /><br />
+    <mat-label><b>Cost:</b></mat-label>
     <mat-form-field appearance="outline">
-        <mat-label>Enter New Cost</mat-label>
-        <input matInput placeholder="54.00" name="cost">
-        <mat-hint>Hint</mat-hint>
-      </mat-form-field>
-      <br><br>
-      <mat-form-field appearance="outline">
-        <mat-label>Enter New Size</mat-label>
-        <input matInput placeholder="2" name="size">
-        <mat-hint>Hint</mat-hint>
-      </mat-form-field>
-</form>
+      <mat-label>Enter New Cost</mat-label>
+      <input matInput placeholder="54.00" name="cost" />
+    </mat-form-field>
+    <br /><br />
+    <mat-label><b>Size:</b></mat-label>
+    <mat-form-field appearance="outline">
+      <mat-label>Enter New Size</mat-label>
+      <input matInput placeholder="2" name="menu_size" />
+    </mat-form-field>
+    <br /><br />
+    <button mat-raised-button color="primary" style="padding: 4px;">UpDate Menu</button>
+  </form>
+</div>
