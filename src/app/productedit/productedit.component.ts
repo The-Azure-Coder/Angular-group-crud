@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { DataService } from '../data.service';
+import { DataService, ProductInterface } from '../data.service';
 
 @Component({
   selector: 'app-productedit',
@@ -9,7 +9,7 @@ import { DataService } from '../data.service';
   styleUrls: ['./productedit.component.css']
 })
 export class ProducteditComponent implements OnInit {
-  products: any = [];
+  product !: ProductInterface;
   id = 0;
   @ViewChild('form') editForm!: ElementRef;
   constructor(
@@ -36,8 +36,8 @@ export class ProducteditComponent implements OnInit {
 
 
 
-    this.dataservice.fetchItem(this.id).subscribe((data: any[]) => {
-      this.products = data;
+    this.dataservice.fetchItem(this.id).subscribe((data: ProductInterface) => {
+      this.product = data;
 
 
 
