@@ -22,6 +22,10 @@ import { MatSortModule } from '@angular/material/sort';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 
+import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MenuComponent } from './menu/menu.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,8 +33,11 @@ import {MatInputModule} from '@angular/material/input';
     AboutComponent,
     DetailsComponent,
     PostComponent,
-    InventoryComponent,
-    ProducteditComponent
+    InventoryComponent, 
+    ProducteditComponent,
+    ProducteditComponent,
+    
+    MenuComponent,
     
   ],
   imports: [
