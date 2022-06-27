@@ -25,6 +25,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MenusComponent } from './menus/menus.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuDetailComponent } from './menu-detail/menu-detail.component';
+import { MenuaddComponent } from './menuadd/menuadd.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { MenuDetailComponent } from './menu-detail/menu-detail.component';
     NavbarComponent,
     MenusComponent,
     MenuDetailComponent,
+    MenuaddComponent,
     
   ],
   imports: [
