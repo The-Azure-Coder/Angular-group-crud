@@ -17,6 +17,10 @@ export class MenuService {
   getMenuItemById(id:number):Observable<IMenu>{
     return this.http.get<IMenu>(this.menuApiEndpoint+"/"+id);
   }
+
+  public addMenu(data:any):Observable<IMenu>{
+    return this.http.post<IMenu>(this.menuApiEndpoint, data);
+  }
 }
 
 

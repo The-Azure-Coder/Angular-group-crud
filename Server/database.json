@@ -817,6 +817,23 @@
       "menu_size": 7,
       "cost": "258.00",
       "imageUrl": "https://source.unsplash.com/1600x900/?food=32"
+    },
+    {
+      "id": 52,
+      "menu_name": "Ackee and Icecream",
+      "menu_description": "Ackee with Icecream of course",
+      "menu_size": "2",
+      "imageUrl": "https://jamaica-gleaner.com/sites/default/files/styles/jg_article_image/public/media/article_images/2021/08/05/1404391/5147785.jpg?itok=bWNakYq8",
+      "cost": "500"
+    },
+    {
+      "id": 53,
+      "menu_name": "New Menu Item",
+      "menu_description": "Better New item Testing",
+      "menu_size": "5",
+      "imageUrl": "https://jamaica-gleaner.com/sites/default/files/styles/jg_article_image/public/media/article_images/2021/08/05/1404391/5147785.jpg?itok=bWNakYq8",
+      "cost": "567"
     }
+
   ]
 }

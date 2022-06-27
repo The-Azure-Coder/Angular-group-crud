@@ -21,10 +21,12 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenusComponent } from './menus/menus.component';
+import { FooterComponent } from './footer/footer.component';
 import { MenuDetailComponent } from './menu-detail/menu-detail.component';
+import { MenuaddComponent } from './menuadd/menuadd.component';
+
 
 
 @NgModule({
@@ -39,7 +41,8 @@ import { MenuDetailComponent } from './menu-detail/menu-detail.component';
     FooterComponent,
     NavbarComponent,
     MenusComponent,
-    MenuDetailComponent
+    MenuDetailComponent,
+    MenuaddComponent,
     
   ],
   imports: [
