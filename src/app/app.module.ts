@@ -26,6 +26,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MenusComponent } from './menus/menus.component';
 import { MenuDetailComponent } from './menu-detail/menu-detail.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,10 +56,10 @@ import { MenuDetailComponent } from './menu-detail/menu-detail.component';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatInputModule,
     MatFormFieldModule,
-    MatInputModule
-   
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,15 +1,19 @@
-
-form {
-    width: 500px;
-    margin-left: 660px;
-    text-align: center;
-    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
-    opacity: 0.7;
+.formbody{
+    background-color: #54BAB9;
+    height: 500px;
+    width: 400px;
+    margin-left: 750px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50px;
 }
-fieldset {
+form {
+    text-align: center;
+    /* box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px; */
+}
+/* fieldset {
     background-color: #fcbf49;
     border-style: dashed;
-}
+} */
 /*legend {
     margin-bottom: 20px;
     text-align: center;
@@ -22,26 +26,26 @@ label {
     font-weight: 300;
     margin-top: 50px;
 }
-input {
+/* input {
     width: 65%;
     padding: 10px;
     text-align: center;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
-    border-bottom-style: dotted;
-    background-color: #fcbf49;
-}
-input[type=number] {
+    border-bottom-style: dotted; 
+    background-color: #fcbf49; 
+} 
+/* input[type=number] {
     width: 20%;
     padding: 10px;
     text-align: center;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
-    border-bottom-style: dotted;
-    background-color: #fcbf49;
-}
+    border-bottom-style: dotted; 
+    background-color: #fcbf49; 
+} */
 h2 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;

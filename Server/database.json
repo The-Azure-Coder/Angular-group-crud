@@ -4,9 +4,9 @@
       "id": 1,
       "name": "Intelligent Cotton Cheese",
       "description": "Quia eveniet tenetur dolore veritatis repellat magni qui. Fuga ipsam maxime blanditiis impedit minus occaecati. In maiores tempora ab. Blanditiis molestias recusandae nobis suscipit ut animi accusamus quas at.",
-      "price": "308.00",
+      "price": 500,
       "imageUrl": "https://source.unsplash.com/1600x900/?food=513",
-      "quantity": 95851
+      "quantity": 7000
     },
     {
       "id": 2,
@@ -399,6 +399,14 @@
       "price": "289.00",
       "imageUrl": "https://source.unsplash.com/1600x900/?food=82",
       "quantity": 11516
+    },
+    {
+      "id": 51,
+      "name": "Juicy Chips",
+      "description": "",
+      "price": 5000,
+      "quantity": 10,
+      "imageUrl": "https://source.unsplash.com/1600x900/?food"
     }
   ],
   "menus": [
