@@ -75,7 +75,18 @@ body {
 }
 
 .ceopics {
-    display:flex
+    display:flex;
+    
+}
+
+.leaderpic {
+    margin-left: 10px;
+}
+
+.leaderpic img {
+ height:150px;
+ width:150px;
+ border-radius: 50%;
 }
 
 
