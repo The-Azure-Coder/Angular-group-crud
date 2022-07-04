@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   // Paginator Event
   pageEvent !: PageEvent;
-  pageSizeOptions = [8, 16, 40, 100];
+  pageSizeOptions = [8, 16,20, 40];
   pageSize = 20;
   length = 100;
   ngOnInit() {
@@ -26,7 +26,6 @@ export class HomeComponent implements OnInit {
 
   getPageWithIndex(event:PageEvent){
     let pageEvent = event
-    console.log(pageEvent.pageIndex);
     this.dataservice.getLimitedProducts(++pageEvent.pageIndex, pageEvent.pageSize).subscribe((data)=>{
       this.products = data;
     })

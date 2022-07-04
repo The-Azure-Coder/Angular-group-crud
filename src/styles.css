@@ -2,7 +2,20 @@
 
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    min-height: 100vh;
+    
+}
+app-root{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+app-root > div{
+    flex-grow: 1;
+}
 :root{
     --primary: #3F51B5;
 }

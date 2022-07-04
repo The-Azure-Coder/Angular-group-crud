@@ -23,8 +23,12 @@ export class DataService {
   }
 
   public getLimitedProducts(page= 1, limit = 20):Observable<ProductInterface[]>{
+<<<<<<< HEAD
+    return this.httpClient.get<ProductInterface[]>(this.REST_API_SERVER+"?_page="+page +"&_limit="+limit);
+=======
 
     return this.httpClient.get<ProductInterface[]>(this.REST_API_SERVER+"?_page="+page +"?_limit="+limit);
+>>>>>>> origin
   }
 
   
