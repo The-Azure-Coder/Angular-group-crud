@@ -1,55 +1,44 @@
-<br><br><br><br>
-<h2>ADDING OR CREATING A NEW PRODUCT</h2>
-<br><br>
+<br>
+<h2>Add or Create a New Product</h2>
 
+<div class="formbody">
+    <br>
     <form action="" method="post" (submit)="createproduct()" #addProductForm>
-        <fieldset>
-            <!--<legend>NEW PRODUCT:</legend>-->
-            <br><br>
-            <label for="name">Product Name</label><br>
-            <input type="text" name="name"><br><br>
+        <mat-form-field appearance="outline" color="warn">
+            <mat-label>Product Name</mat-label>
+            <input type="text" name="name" matInput placeholder="Placeholder">
+        </mat-form-field>
+        <br>
 
-            <label for="description">Product Description</label><br>
-            <input type="text" name="description"><br><br>
+        <mat-form-field appearance="outline" color="warn">
+            <mat-label>Product Description</mat-label>
+            <textarea name="description" matInput rows="5"></textarea>
+        </mat-form-field>
+        <br>
 
-            <label for="price">Price</label><br>
-            <input type="number" name="price"><br><br>
+        <mat-form-field appearance="outline" color="warn">
+            <mat-label>Price</mat-label>
+            <input name="price" matInput type="number">
+        </mat-form-field>
+        <br>
 
-            <label hidden for="imageUrl">Product Image</label>
-            <input type="hidden" name="imageUrl" value="https://source.unsplash.com/1600x900/?food">
+        <!-- <mat-form-field appearance="outline" color="warn">
+            <mat-label>Product Image</mat-label>
+            <input type="text" matInput  name="imageUrl" value="https://source.unsplash.com/1600x900/?food">
+        </mat-form-field> -->
 
-            <label for="quantity">Quantity</label><br>
-            <input type="number" name="quantity"><br><br>
-
-            <button mat-raised-button color="accent">Add Product to Database</button><br><br>
-        </fieldset>
-    </form>
+        <mat-form-field appearance="outline" color="warn">
+            <mat-label>Quantity</mat-label>
+            <input name="quantity" matInput type="number">
+        </mat-form-field>
+        <br>
+        
+        <button mat-raised-button color="accent">Add Product to Database</button>
+    </form> 
+    <br><br><br><br>           
+</div>
+<br>
+   
 
     
-<!--<form action="" method="post" (submit)="createproduct()" #addProductForm>
-    
 
-    <label for="id">Product Id  </label>
-    <input type="number" name="id">
-
-    <label for="name">Product Name </label>
-    <input type="text" name="name" >
-
-    <label for="description">Product Description</label>
-    <input type="text" name="description">
-
-    <label for="price">Price </label>
-    <input type="number" name="price" >
-
-    <label hidden for="imageUrl">Product Image</label>
-    <input type="hidden"   name="imageUrl" value="https://source.unsplash.com/1600x900/?food">
-
-    <label for="quantity">Quantity"  </label>
-    <input type="number" name="quantity">
-
-
-    <button    mat-button > Add Product to Database</button>
-
-
-
-</form>-->

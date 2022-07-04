@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
   private REST_API_SERVER = 'http://localhost:3000/products';
+  //MENU INTERFACE
   constructor(private httpClient: HttpClient) { }
   public sendGetRequest():Observable<ProductInterface[]>{
     return this.httpClient.get<ProductInterface[]>(this.REST_API_SERVER);
@@ -23,9 +24,9 @@ export class DataService {
 
   public getLimitedProducts(page= 1, limit = 20):Observable<ProductInterface[]>{
     return this.httpClient.get<ProductInterface[]>(this.REST_API_SERVER+"?_page="+page +"&_limit="+limit);
+
   }
 
-  
   
   //This Scans the ID for the product
 

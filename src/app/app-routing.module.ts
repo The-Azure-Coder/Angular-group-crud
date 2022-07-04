@@ -8,6 +8,7 @@ import { ProducteditComponent } from './productedit/productedit.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { MenusComponent } from './menus/menus.component';
 import { MenuDetailComponent } from './menu-detail/menu-detail.component';
+import { MenuaddComponent } from './menuadd/menuadd.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "home", pathMatch:'full'},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: "inventory", component:InventoryComponent},
   {path: "menus", component:MenusComponent},
   {path: "menus/:id", component:MenuDetailComponent},
+  {path: "menuadd", component:MenuaddComponent},
   
   
 ];

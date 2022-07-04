@@ -20,7 +20,7 @@ export class PostComponent implements OnInit {
   
 
   ngOnInit(): void {
-    
+     
 
   }
 
@@ -30,15 +30,14 @@ export class PostComponent implements OnInit {
     let data = {
       id: 0,
       name: (formdata.querySelector("input[name='name']") as HTMLInputElement).value,
-      description: (formdata.querySelector("input[name='description']") as HTMLInputElement).value,
+      description: (formdata.querySelector("textarea[name='description']") as HTMLInputElement).innerText,
       price: parseFloat((formdata.querySelector("input[name='price']") as HTMLInputElement).value),
       quantity: parseInt((formdata.querySelector("input[name='quantity']") as HTMLInputElement).value),
-      imageUrl: (formdata.querySelector("input[name='imageUrl']") as HTMLInputElement).value,
+      imageUrl: "https://source.unsplash.com/1600x900/?food",
     };
     this.dataservice.sendGetRequest().subscribe((response)=>{
         data.id = response.length +1;
         this.dataservice.addproduct(data).subscribe((response)=>{
-          console.log(response)
           this.router.navigateByUrl("/home");
         })
     })

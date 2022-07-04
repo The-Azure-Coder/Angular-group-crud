@@ -1,4 +1,114 @@
+body {
+    background-image: url("https://img.freepik.com/free-photo/close-up-slate-background_23-2148349439.jpg?w=2000");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.main_body {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    
+}
+.bluescreen {
+    text-align: center;
+    background-image: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=2000");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 1px solid ;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.166); */
+    height: 300px;
+    
+}
+
+.bluescreentext {
+   position: absolute;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+.missionpart{
+    background-color: whitesmoke;
+}
+.mainmission{
+    display: flex;
+    height: 400px;
+}
+
+.leftmission {
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 20px;
+    
+}
+
+
+
+.rightmissiontwopics {
+    display: flex;
+}
+
+.rightmissiontwopics img {
+
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    margin-left: 30px;
+    
+}
+
+.rightmissiononepics img {
+    width: 370px;
+    margin-left: 50px;
+    height: 150px;
+
+}
+.leaders {
+    text-align: center;
+    background-color: #3f51b5;
+    color: white;
+    margin-top: -21px;
+    
+    
+}
+
+.ceopics {
+    display:flex;
+    
+}
+
+.leaderpic {
+    margin-left: 10px;
+}
+
+.leaderpic img {
+ height:150px;
+ width:150px;
+ border-radius: 50%;
+}
+
+
+.otherdiv {
+    text-align: center;
+    background-color: lightgray;
+    margin-top: -21px;
+}
+
+span {
+    font-size: 20px;
+}
+
+input {
+    border: 2px green solid;
+    height: 18px;
+}
+
+button {
+    background-color: green;
+}
+/* 
 body {
     background-color: rgba(194, 227, 242, 0.689);
 }
@@ -94,15 +204,6 @@ background: linear-gradient(90deg, rgba(231,231,231,1) 9%, rgba(253,29,29,0.6365
     font-family: 'Times New Roman', Times, serif;
     color: black;
     
-}
+} */
 
-input {
-    border: 2px green solid;
-    height: 18px;
-}
 
-span {
-    font-size: 20px;
-}
-
- 
