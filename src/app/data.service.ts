@@ -22,7 +22,11 @@ export class DataService {
   }
 
   public getLimitedProducts(page= 1, limit = 20):Observable<ProductInterface[]>{
+<<<<<<< Updated upstream
 
+=======
+    console.log([page, limit])
+>>>>>>> Stashed changes
     return this.httpClient.get<ProductInterface[]>(this.REST_API_SERVER+"?_page="+page +"&_limit="+limit);
   }
 
