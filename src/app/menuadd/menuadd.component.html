@@ -1,0 +1,31 @@
+<h1></h1>
+<form action="" method="post" (submit)="createmenu()" #addMenuForm>
+    <h2>Add your Menu to the Database</h2>
+    <fieldset>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label for="menu_name">Name of Menu</mat-label>
+                <input type="text" name="menu_name" matInput required="">
+            </mat-form-field> &nbsp;
+            <mat-form-field appearance="outline">
+                <mat-label for="menu_size">Size of Menu</mat-label>
+                <input type="number" name="menu_size" matInput required>
+            </mat-form-field> <br> 
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label for="imageUrl">Image Url of Menu</mat-label>
+                <input type="text" name="imageUrl" matInput required >
+            </mat-form-field> &nbsp;
+            <mat-form-field appearance="outline">
+                <mat-label for="cost">Cost of Menu</mat-label>
+                <input type="number" name="cost" matInput required>
+            </mat-form-field> <br> 
+        </div>
+        <mat-form-field appearance="outline" class="desc">
+            <mat-label for="menu_description">Menu Description</mat-label>
+            <input type="text" name="menu_description" matInput class="desc" required="">
+        </mat-form-field > <br> 
+        <button mat-raised-button>Add Menu to Database</button><br><br>
+    </fieldset>
+</form>

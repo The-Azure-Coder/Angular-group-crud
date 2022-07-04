@@ -10,21 +10,20 @@ img {
 
 form {
     width: 500px;
-    margin-left: 670px;
+    margin-left: 700px;
     text-align: center;
-    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
-    opacity: 0.7;
+    /* box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px; */
 }
-fieldset {
+/* fieldset {
     background-color: #48cae4;
     border-style: dashed;
-}
+} */
 label {
     font-size: 16px;
     font-weight: 300;
     margin-top: 50px;
 }
-input {
+/* input {
     width: 65%;
     padding: 10px;
     text-align: center;
@@ -33,8 +32,8 @@ input {
     border-left-style: hidden;
     border-bottom-style: dotted;
     background-color: #48cae4;
-}
-input[type=number] {
+} */
+/* input[type=number] {
     width: 20%;
     padding: 10px;
     text-align: center;
@@ -43,7 +42,7 @@ input[type=number] {
     border-left-style: hidden;
     border-bottom-style: dotted;
     background-color: #48cae4;
-}
+} */
 h1 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;

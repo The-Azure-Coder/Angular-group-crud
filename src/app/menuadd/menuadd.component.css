@@ -1,0 +1,27 @@
+form {
+    margin-left: 30%;
+    padding: 20px;
+    /* border: 2px solid black; */
+    /* box-shadow: 1px lightslategray; */
+    width: 600px;
+    text-align: center;
+    
+}
+
+
+fieldset {
+    text-align: center;
+    
+}
+
+.desc {
+    width: 300px;
+   
+}
+
+
+button {
+    background-color: #3f51b5;
+    color:whitesmoke;
+    border-radius:25px;
+}
